@@ -11,11 +11,12 @@ header {
     color: white;
 }
 
+
 main {
     background-color: tan;
-
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 2%;
 }
 
@@ -27,6 +28,7 @@ main {
     background-color:rgb(5, 81, 116);
     overflow: hidden;
     margin-left: 50%;
+    height: 50%;
 }
 
 .topnav a {
@@ -51,29 +53,68 @@ main {
 
 /*Body*/
 
+
 h2 {
     display: inline-block;
 }
 
 .card {
-    width: 10%;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    flex: 1 0 0;
-    text-align: center;
+    background: #fcfcfc;
+    width: 100%;
+    border: 15px solid rgb(5, 81, 116);
+    padding: 30px;
+    margin: 20px;
+  }
 
-
-.card img {
+  .card img {
     width: 100%;
     min-width: 400px;
 }
 
 .first-card {
-    display:inline-block;
+    display:inline-flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    max-width: 100%;
     min-height: 100%;
     padding: 2rem;
-  }
+}
+
+#first-card img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+}
+
+#first-card .overlay {
+    position: absolute;
+    bottom: 10%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 65%;
+    transition: .5s ease;
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#more-cards {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 100%;
+    max-width: 50%;
+}
+
+#more-cards img {
+    width: 50%;
+}
 
