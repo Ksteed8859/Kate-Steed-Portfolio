@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+/* Header and Navigation*/
+header {
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(5, 81, 116);
+    color: white;
+}
+
+main {
+    background-color: tan;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+
+.topnav {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(5, 81, 116);
+    overflow: hidden;
+    margin-left: 50%;
+}
+
+.topnav a {
+    display: flex;
+    float: right;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color:black;
+}
+
+.topnav a.active {
+    background-color:white;
+    color: black;
+}
+
+/*Body*/
+
+h2 {
+    display: inline-block;
+}
+
+.card {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 0 0;
+    text-align: center;
+
+}
+
+.card img {
+    width: 100%;
+    min-width: 400px;
+}
+
+.first-card {
+    display:inline-block;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+  }
