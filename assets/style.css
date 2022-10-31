@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 /* Header and Navigation*/
 header {
     display: flex;
@@ -12,6 +13,7 @@ header {
 
 main {
     background-color: tan;
+
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
@@ -61,7 +63,6 @@ h2 {
     flex: 1 0 0;
     text-align: center;
 
-}
 
 .card img {
     width: 100%;
@@ -75,3 +76,4 @@ h2 {
     min-height: 100%;
     padding: 2rem;
   }
+
