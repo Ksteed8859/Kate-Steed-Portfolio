@@ -1,11 +1,18 @@
 * {
     box-sizing: border-box;
+    background-color: rgb(229, 222, 212);
 }
 
+h1 {
+    background-color: rgb(5, 81, 116);
+}
 h2 {
     justify-content: left;
     font-size: 40px;
     color:rgb(5, 81, 116); 
+}
+.overlay h3, .overlay p {
+    background-color: transparent;
 }
 
 /* Header and Navigation*/
@@ -17,7 +24,6 @@ header {
     font-size: 30px;
     background-color: rgb(5, 81, 116);
     color: white;
-
     column-count: 3;
 }
 
@@ -55,6 +61,7 @@ main {
     display: flex;
     float: right;
     color: #fcfcfc;
+    background-color: rgb(5, 81, 116);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -84,11 +91,50 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    
+}
+/* Overall Sections*/
+#About {
+    margin-top: 75px;
+    border-style: solid;
+    border-width: thick;
+    border-color: rgb(5, 81, 116);
+    background-color: white;
+}
+
+#About h2, #About p {
+    background-color: white;
+    margin: 25px;
+}
+
+#About p {
+    font-size: 20px;
+}
+
+#Work h2 {
+    margin-top: 75px;
+    border-style: solid;
+    border-width: thick;
+    border-color: rgb(5, 81, 116);
+    background-color: white;
+}
+
+#Contact {
+    margin-top: 75px;
+    border-style: solid;
+    border-width: thick;
+    border-color: rgb(5, 81, 116);
+    background-color: white;
+}
+
+#Contact h2, #Contact p, #Contact a {
+    background-color: white;
+    margin: 25px;
 }
 
 /* card-1*/
 #card-1 img {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     max-width: 700px;
     height: 350px;
@@ -97,23 +143,23 @@ main {
 
 #card-1 .overlay {
     position: absolute;
-    bottom: 10%;
-    background: rgb(0, 0, 0);
+    bottom: -8%;
+    margin-top: 50px;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 700px;
-    transition: .5s ease;
+    height: -30%;
     opacity:1;
-    color: white;
     font-size: 20px;
     padding: 20px;
-    text-align: center;
+    text-align: center;   
 }
 
-#card-1:hover {
+#card-1:hover img {
     padding: 30px;
     padding-right: 30px;
     background-color: lightblue;
+    transition-duration: 1s;
     
 }
 
@@ -122,14 +168,42 @@ main {
     display: flex;
     flex-wrap: wrap;
     max-width: 200px;
+    background-color: white;
     height: 200px;
     margin: 50px;
 }
 
 
-
-#card-2:hover , #card-3:hover {
+#card-2:hover img , #card-3:hover img {
     padding: 10px;
     padding-right: 10px;
     background-color: lightblue;
+    transition-duration: 1s;
+}
+
+#card-2 .overlay , #card-3 .overlay {
+    text-align: center;
+    background-color: white;
+    margin: 40px;
+    border-style: solid;
+    border-width: thick;
+    border-color: rgb(5, 81, 116);
+    text-decoration: none;
+}
+
+/* Contact Section */
+
+#Contact p {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+#Contact a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#Contact a:hover {
+    color: black; 
 }
